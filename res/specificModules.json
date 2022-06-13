@@ -1,0 +1,54 @@
+[
+    { "id": 1, "name": "PPS", "typ": "vertiefung", "art": "Wirtschaft", "schwerpunkt": "Grundlagenmodul", "crp": 5 },
+    { "id": 2, "name": "Arbeitswissenschaften/Fabrikplanung", "typ": "vertiefung", "art": "Wirtschaft", "schwerpunkt": "Grundlagenmodul", "crp": 5 },
+    { "id": 3, "name": "Technischer Einkauf", "typ": "vertiefung", "art": "Wirtschaft", "schwerpunkt": "Grundlagenmodul", "crp": 5 },
+    { "id": 4, "name": "Technischer Vertrieb", "typ": "vertiefung", "art": "Wirtschaft", "schwerpunkt": "Grundlagenmodul", "crp": 5 },
+    { "id": 5, "name": "Unternehmensfinanzierung und Unternehmenssteuern", "typ": "vertiefung", "art": "Wirtschaft", "schwerpunkt": "Grundlagenmodul", "crp": 5 },
+    { "id": 6, "name": "Jahresabschluss", "typ": "vertiefung", "art": "Wirtschaft", "schwerpunkt": "Grundlagenmodul", "crp": 5 },
+    { "id": 7, "name": "Lean Management", "typ": "vertiefung", "art": "Wirtschaft", "schwerpunkt": "Grundlagenmodul", "crp": 5 },
+    { "id": 8, "name": "Digitale Transformation", "typ": "vertiefung", "art": "Wirtschaft", "schwerpunkt": "Grundlagenmodul", "crp": 5 },
+
+    { "id": 9, "name": "Handhabungs- und Montagetechnik inkl. Labor", "typ": "vertiefung", "art": "Technik", "schwerpunkt": "Maschinenbau", "crp": 5 },
+    { "id": 10, "name": "Werkzeugmaschinen inkl. Labor", "typ": "vertiefung", "art": "Technik", "schwerpunkt": "Maschinenbau", "crp": 5 },
+    { "id": 11, "name": "Konstruktionsmethodik 4.0 (läuft 2 Semester)", "typ": "vertiefung", "art": "Technik", "schwerpunkt": "Maschinenbau", "crp": 10 },
+    { "id": 12, "name": "Mess-, Steuer-, Regeltechnik", "typ": "vertiefung", "art": "Technik", "schwerpunkt": "Maschinenbau", "crp": 5 },
+    { "id": 13, "name": "Energietechnik", "typ": "vertiefung", "art": "Technik", "schwerpunkt": "Maschinenbau", "crp": 5 },
+    { "id": 14, "name": "Maschinendesign", "typ": "vertiefung", "art": "Technik", "schwerpunkt": "Maschinenbau", "crp": 5 },
+    { "id": 15, "name": "Innovative Fertigungsprozesse", "typ": "vertiefung", "art": "Technik", "schwerpunkt": "Maschinenbau", "crp": 5 },
+
+    { "id": 16, "name": "Kleinmotoren", "typ": "vertiefung", "art": "Technik", "schwerpunkt": "Elektrotechnik", "crp": 5 },
+    { "id": 17, "name": "Elektrische Antriebstechnik", "typ": "vertiefung", "art": "Technik", "schwerpunkt": "Elektrotechnik", "crp": 5 },
+    { "id": 18, "name": "Elektrische Fahrzeugsysteme und -aktuatoren", "typ": "vertiefung", "art": "Technik", "schwerpunkt": "Elektrotechnik", "crp": 5 },
+    { "id": 19, "name": "Sensoren und Bussysteme im Fahrzeug", "typ": "vertiefung", "art": "Technik", "schwerpunkt": "Elektrotechnik", "crp": 5 },
+    { "id": 20, "name": "Einführung in die Energietechnik", "typ": "vertiefung", "art": "Technik", "schwerpunkt": "Elektrotechnik", "crp": 5 },
+    { "id": 21, "name": "Elektrische Energieumformung", "typ": "vertiefung", "art": "Technik", "schwerpunkt": "Elektrotechnik", "crp": 5 },
+    { "id": 22, "name": "Elektrische Gebäudesystemtechnik", "typ": "vertiefung", "art": "Technik", "schwerpunkt": "Elektrotechnik", "crp": 5 },
+    { "id": 23, "name": "Elektrische Gebäudesicherheitstechnik", "typ": "vertiefung", "art": "Technik", "schwerpunkt": "Elektrotechnik", "crp": 5 },
+    { "id": 24, "name": "Digitale Übertragungstechnik", "typ": "vertiefung", "art": "Technik", "schwerpunkt": "Elektrotechnik", "crp": 5 },
+    { "id": 25, "name": "Rechnernetzwerktechnik Grundlagen", "typ": "vertiefung", "art": "Technik", "schwerpunkt": "Elektrotechnik", "crp": 5 },
+
+    { "id": 26, "name": "Lebenszyklusorientiertes Wertschöpfungskettenmanagement", "typ": "vertiefung", "art": "LCM", "schwerpunkt": "Life Cycle Management", "crp": 5 },
+    { "id": 27, "name": "Life Cycle Assessment/ Lebensweganalysen (Vertiefung mit EDV-Anwendung)", "typ": "vertiefung", "art": "LCM", "schwerpunkt": "Life Cycle Management", "crp": 5 },
+    { "id": 28, "name": "XLab – Lernfabrik", "typ": "vertiefung", "art": "LCM", "schwerpunkt": "Life Cycle Management", "crp": 5 },
+    { "id": 29, "name": "Lebenszyklusorientiertes Ressourcenmanagement", "typ": "vertiefung", "art": "LCM", "schwerpunkt": "Life Cycle Management", "crp": 5 },
+    { "id": 30, "name": "Umweltkostenrechnung/ Life Cycle Costing", "typ": "vertiefung", "art": "LCM", "schwerpunkt": "Life Cycle Management", "crp": 5 },
+
+    { "id": 31, "name": "Digitales Produktdesign", "typ": "wahlpflicht", "art": "Technik", "schwerpunkt": "Grundlagenmodul", "crp": 5 },
+    { "id": 32, "name": "Pneumatik und Hydraulik", "typ": "wahlpflicht", "art": "Technik", "schwerpunkt": "Grundlagenmodul", "crp": 5 },
+    { "id": 33, "name": "Fallstudie", "typ": "wahlpflicht", "art": "Technik", "schwerpunkt": "Grundlagenmodul", "crp": 5 },
+    { "id": 34, "name": "Elektrotechnik", "typ": "wahlpflicht", "art": "Technik", "schwerpunkt": "Life Cycle Management", "crp": 5 },
+    { "id": 35, "name": "Energietechnik", "typ": "wahlpflicht", "art": "Technik", "schwerpunkt": "Life Cycle Management", "crp": 5 },
+    { "id": 36, "name": "Informatik", "typ": "wahlpflicht", "art": "Technik", "schwerpunkt": "Life Cycle Management", "crp": 5 },
+
+    { "id": 37, "name": "Total Quality Management (TQM) (W)", "typ": "wahlpflicht", "art": "Wirtschaft", "schwerpunkt": "Grundlagenmodul", "crp": 5 },
+    { "id": 38, "name": "Produktinnovation", "typ": "wahlpflicht", "art": "Wirtschaft", "schwerpunkt": "Grundlagenmodul", "crp": 5 },
+    { "id": 39, "name": "Logistische Spezialprobleme", "typ": "wahlpflicht", "art": "Wirtschaft", "schwerpunkt": "Grundlagenmodul", "crp": 5 },
+    { "id": 40, "name": "Fallstudie", "typ": "wahlpflicht", "art": "Wirtschaft", "schwerpunkt": "Grundlagenmodul", "crp": 5 },
+    { "id": 41, "name": "Operations Management", "typ": "wahlpflicht", "art": "Wirtschaft", "schwerpunkt": "Grundlagenmodul", "crp": 5 }
+
+
+
+
+
+
+]
