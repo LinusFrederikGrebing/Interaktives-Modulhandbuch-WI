@@ -1,0 +1,38 @@
+@media only screen and (min-device-width: 450px) and (max-device-width: 1000px) {
+    #kreuz {
+        top: 90vh;
+        right: 90v;
+        }
+
+    .image {
+        height: auto;
+        width: 30vw;        
+    }
+
+    header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 2vw;
+    }
+    
+    
+}
+
+@media only screen and (min-device-width: 1000px){
+    #kreuz {
+        top: 90vh;
+        right: 90v;
+        }
+
+    .image {
+        height: auto;
+        width: 20vw;        
+    }
+
+    header {
+        font-size: 1vw;
+    } 
+}
+
