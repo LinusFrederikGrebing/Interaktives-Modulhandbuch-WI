@@ -1,0 +1,50 @@
+.arrow{
+    overflow: hidden;
+}
+
+html,
+body {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            overflow: hidden;
+            position: absolute;
+            top: 0;
+            left: 0;
+}
+
+.arrow-container {
+    position: absolute;
+    min-width: 50px;
+    min-height: 50px;
+    display: inline-block;
+}
+
+.arrow-master {
+    position: relative;
+    height: 100%;
+    width: 100;
+}
+
+/* MAIN */
+main {
+    padding: 1vw;
+    text-align: center;
+    background-image: URL(https://www.ggs-frelenberg.de/files/ggs-frelenberg/theme/img/tafel.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+section {
+    border-radius: 1em;
+    height: 100%;
+}
+
+.img-section {
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%,-50%);
+}

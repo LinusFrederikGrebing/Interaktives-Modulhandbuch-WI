@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<!-- GEMEINSAMER HEAD -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0">
+
+    <!-- CSS-FILES -->
+    <link rel="stylesheet" href="http://fonts.cdnfonts.com/css/callie-chalk-font">
+    <link rel="stylesheet" href="../../T0/CSS/grundstruktur.css">
+    <link rel="stylesheet" href="../../T0/CSS/desktop.css">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/desktopT1.css">
+    <link rel="stylesheet" media="screen and (max-width: 449px)" href="elektrotechnik_style.css">
+    <link rel="stylesheet" media="screen and (min-width: 450px)" href="elektrotechnik_styleDesktop.css">
+    <title> Modulhandbuch - WI </title>
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <!-- GEMEINSAMER HEADER -->
+        <header>
+            <button class="buttonlogo" id="buttonlogo">
+                <img class="logo" src="../../../res/images/T1/THM_Logo_4c (1).png" alt="thmLogo">
+            </button>
+
+            <h1 class="bold" id="modulUeberschrift">Semesterauswahl</h1>
+            <div class="kreuzModule inaktiv">
+                <img onclick="semesterwahl(); closeModule(); toggleBG();" class="kreuz"
+                    src="../../../res/images/T1/kreuz.png" alt="thmLogo">
+            </div>
+        </header>
+
+        <!-- GEMEINSAME NAVIGATION -->
+        <section class="sectionfull">
+            <div>
+                <div class="backgroundnav"></div>
+                <nav>
+                    <ul class="main-menu">
+                        <li><a href="../../T2/index.html"><span data-clip="Start">Start</span></a></li>
+                        <li><a href="../../T3/view.html"><span data-clip="Schwerpunktwahl">Schwerpunktwahl</span></a>
+                        </li>
+                        <li><a class="navfontmiddle" href="../Maschinenbau/Maschinenbau.html"
+                                onclick="semesterwahl()"><span data-clip="Maschinenbau">Maschinenbau</span></a></li>
+                        <li><a class="navfontmiddle" href="" onclick="semesterwahl()"><span
+                                    data-clip="Elektrotechnik">Elektrotechnik</span></a>
+                        </li>
+                        <li><a class="navfontmiddle" href="../Lifecycle Management/lcm.html"
+                                onclick="semesterwahl()"><span
+                                    data-clip="Life-Cycle-Management">Life-Cycle-Management</span></a></li>
+                                    <li><a href="../Dokumente/Dokumente.html"><span data-clip="Dokumente">Dokumente</span></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+
+        <!-- GEMEINSAMER ANFANG INHALTSBEREICH -->
+        <main id="mainid" class="">
+            <!--        <div>Diese Fläche füllen. Maybe mit Links oder so</div>-->
+            <!-- GEMEINSAMER ANFANG INHALTSBEREICH -->
+            <section class="modulList">
+                <section id="sidesection" class="sidebar toggelsidebar">
+                </section>
+            </section>
+
+            <!-- INHALT FÜR DIE SEMESTERAUSWAHL -->
+            <div class="semesterauswahl">
+                <div class="chip">
+                    <img id="svg_chip" src="../../../res/images/elektrotechnik/chip.svg">
+                    <div class="pins">
+                        <div onclick="setList(8, 'Elektrotechnik'); sidebarswitch(8);" id="pin8" class="pindefault">
+                            <span class="number">P</span>
+                        </div>
+                    </div>
+                    <div class="wires">
+                    </div>
+                    <div class="lights">
+                        <div class="lightdefault"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- INHALT FÜR DIE MODULAUSWAHL -->
+            <div class="inaktiv modulansicht">
+                <section class="img-sectionModul tafelimg" id="modulSec">
+                    <img class="image" src="" alt="Zahnrad" id="modulBild">
+                </section>
+                <section class="text-section text" id="MODSEC">
+                    <h2>Modulinformation</h2>
+                    <p id="modulInhalt">weitere Informationen zum Modul -> Informationen ausgelesen durch js mithilfe
+                        von
+                        XML / Exel etc.</p>
+                </section>
+            </div>
+
+            <!-- Inhalt Vertiefungsmodule -->
+            <div class="inaktiv vertiefungssicht">
+                <section class="img-sectionModul tafelimg" id="praxSec">
+                    <img class="leftArrow" onclick="switchImgLeft()" src="../../../res/images/T1/Arrow.png"
+                        alt="leftArrow">
+
+                    <section class="innersection">
+                        <img class="aussenLinks" src="" alt="außen1">
+                        <figure>
+                            <img class="mitte" src="" alt="Zahnrad">
+                            <figcaption class="figCapM"></figcaption>
+                        </figure>
+                        <img class="aussenRechts" src="" alt="außen2">
+                    </section>
+                    <img class="rightArrow" onclick="switchImgRight()" src="../../../res/images/T1/Arrow.png"
+                        alt="rightArrow">
+                </section>
+
+                <section class="text-section text">
+                    <h2 class="bold" id="ueberschrift"></h2>
+                    <p id="VInhalt">fhg</p>
+                </section>
+
+            </div>
+            <!-- GEMEINSAME NAVSEC-->
+            <section class="sectionSmallNav inaktiv" id="smallsec">
+                <img class="leftArrowSmall" onclick="switchmodulleft(); dotMinus()"
+                    src="../../../res/images/T1/Arrow.png" alt="leftArrow">
+                <div id="dots">
+
+                </div>
+                <img class="rightArrowSmall" onclick="switchmodulright(); dotPlus()"
+                    src="../../../res/images/T1/Arrow.png" alt="rightArrow">
+            </section>
+        </main>
+        <!-- GEMEINSAMES ENDE INHALTSBEREICH -->
+
+        <!-- GEMEINSAMER FOOTER -->
+        <footer class="footerSmall">
+            <img class="ArrowFooter" onclick="footerStart()" src="../../../res/images/T1/ArrowGrey.png"
+                alt="footerArrow">
+            <section class="footer-section flexContent">
+                <ul>
+                    <h3>Web-Links</h3>
+                    <li><a href="https://moodle.thm.de/course/view.php?id=7073" target="_blank"> Moodle</a></li>
+                    <li><a href="https://webmail.thm.de/rc/?_task=mail&_mbox=INBOX" target="_blank"> Webmail</a></li>
+                    <li> </li>
+                    <li></li>
+                </ul>
+                <ul>
+                    <h3>Kontakt</h3>
+                    <li>Technische Hochschule Mittelhessen</li>
+                    <li>Fachbereich Wirtschaftsingenieurwesen</li>
+                    <li> +49 6031 604-500</li>
+                    <li>sekretariat@wi.thm.de</li>
+                </ul>
+                <ul>
+                    <h3>Besuchadresse</h3>
+                    <li>Campus Friedberg</li>
+                    <li>Sekretariat & Dekanat</li>
+                    <li>Raum A4.1.02</li>
+                    <li>D - 61169 Friedberg</li>
+                </ul>
+                <ul>
+                    <ul>
+                        <h3>Socialmedia</h3>
+                        <li><a href="https://www.thm.de/wi/studium/sie-studieren/aktuelles?format=feed&type=rss" target="_blank"><img class="footerImg"src="https://www.thm.de/site/templates/thm/images/socialmedia/rss.svg"></img> WI RSS FEED</a></li>
+                        <li><a href="https://www.youtube.com/playlist?list=PLKmmYfW-9lJU2SpoPQ5tNiRytHyrqYai8" target="_blank"><img class="footerImg"src="https://www.thm.de/site/templates/thm/images/socialmedia/youtube.svg"> Youtube</img></a></li>
+                        <li><a href="https://www.facebook.com/thm.wi" target="_blank"><img class="footerImg"src="https://www.thm.de/site/templates/thm/images/socialmedia/facebook.svg"> Facebook</a></img></li>
+                        <li><a href="https://www.instagram.com/thm.wi/" target="_blank"><img class="footerImg"src="https://www.thm.de/site/templates/thm/images/socialmedia/instagram.svg"></img> Instagram</a></li>
+                    </ul>
+                </ul>
+            </section>
+
+        </footer>
+    </div>
+</body>
+
+<!-- JS-FILES -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+<script src="https://code.jquery.com/jquery-latest.js"></script>
+<script src="../../T0/JS/gsap.js"></script>
+<script src="../../T0/JS/script.js"></script>
+<script src="../../T0/JS/modules.js"></script>
+<script src="../../T1/Elektrotechnik/elektrotechnik.js"></script>
+
+
+</html>

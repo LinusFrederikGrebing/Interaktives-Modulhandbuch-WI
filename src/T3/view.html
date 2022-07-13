@@ -6,24 +6,25 @@
     <meta name="viewport" content="initial-scale=1.0">
 
     <!-- CSS-FILES -->
-    <link rel="stylesheet" href="styleM.css">
-    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../T0/CSS/grundstruktur.css">
+    <link rel="stylesheet" href="../T0/CSS/desktop.css">
+
 
     <title> Modulhandbuch - WI </title>
 </head>
 
 <body>
     <div class="wrapper">
-
+       
         <!-- GEMEINSAMER HEADER -->
-        <aside>
+        <header>
             <button class="buttonlogo" id="buttonlogo">
-                <img class="logo" src="../../../res/images/T1/THM Logo.png" alt="thmLogo" ></aside>
+                <img class="logo" src="../../../res/images/T1/THM_Logo_4c (1).png" alt="thmLogo" >
             </button>
-        </aside>
 
-        <header class="header">
-            <h1 id="schwerpunktwahlueberschrift">Schwerpunktwahl</h1>
+            <h1 class="bold" id="modulUeberschrift">Schwerpunktwahl</h1>
+
         </header>
         
         <!-- GEMEINSAME NAVIGATION -->
@@ -32,65 +33,105 @@
                 <div class="backgroundnav"></div>
                 <nav>
                     <ul class="main-menu">
-                        <li><a href=""><span data-clip="Start">Start</span></a></li>
-                        <li><a href=""><span data-clip="Schwerpunktwahl">Schwerpunktwahl</span></a></li>
-                        <li><a class="navfontmiddle" href="" onclick="semesterwahl()"><span data-clip="Maschinenbau">Maschinenbau</span></a></li>
-                        <li><a class="navfontmiddle" href="" onclick="semesterwahl()"><span data-clip="Elektrotechnik">Elektrotechnik</span></a></li>
-                        <li><a class="navfontmiddle" href="" onclick="semesterwahl()"><span data-clip="Life-Cycle-Management">Life-Cycle-Management</span></a></li>
-                        <li><a href=""><span data-clip="Contact">Contact</span></a></li>
+                        <li><a href="../T2/index.html"><span data-clip="Start">Start</span></a></li>
+                        <li><a href="../T3/view.html"><span data-clip="Schwerpunktwahl">Schwerpunktwahl</span></a></li>
+                        <li><a class="navfontmiddle" href="../T1/Maschinenbau/Maschinenbau.html" onclick="semesterwahl()"><span data-clip="Maschinenbau">Maschinenbau</span></a></li>
+                        <li><a class="navfontmiddle" href="../T1/Elektrotechnik/elektrotechnik.html" onclick="semesterwahl()"><span data-clip="Elektrotechnik">Elektrotechnik</span></a></li>
+                        <li><a class="navfontmiddle" href="../T1/Lifecycle Management/lcm.html" onclick="semesterwahl()"><span data-clip="Life-Cycle-Management">Life-Cycle-Management</span></a></li>
+                        <li><a href="../T1/Dokumente/Dokumente.html"><span data-clip="Dokumente">Dokumente</span></a></li>
                     </ul>
                 </nav>
             </div>
         </section>
+        
 
         <!-- GEMEINSAMER ANFANG INHALTSBEREICH -->
 
         <main>
         <div class="tafel" id="tafelId">
-            <div class="tafelspalte" id="tafelspalte1" onclick="getActiveSlideIndex(0)">
+            <div class="tafelspalte" id="tafelspalte1">
                 <button class="btn-icon" id="btn-maschinenbau">
-                    <img id="maschinenbaulogo" class="responsiveimg" src="../T3/resources/WIMaschinenbauLogo.png"></button></div>
+                    <img id="maschinenbaulogo-outer" class="responsiveimg" src="../T3/resources/WIMaschinenbauLogo.png"></button></div>
             <div class="tafelspalte" id="tafelspalte2">
-                <button class="btn-icon" id="btn-lifecycle" onclick="getActiveSlideIndex(1)">
-                    <img id="lifecyclelogo" class="responsiveimg" src="../T3/resources/WILifecyclemanagementLogo.png"></button></div>
+                <button class="btn-icon" id="btn-lifecycle">
+                    <img id="lifecyclelogo-outer" class="responsiveimg" src="../T3/resources/WILifecyclemanagementLogo.png"></button></div>
             <div class="tafelspalte" id="tafelspalte3">
-                <button class="btn-icon" id="btn-elektrotechnik" onclick="getActiveSlideIndex(2)">
-                    <img id="elektrotechniklogo" class="responsiveimg" src="../T3/resources/WIElektrotechnikLogo.png"></button></div>
+                <button class="btn-icon" id="btn-elektrotechnik">
+                    <img id="elektrotechniklogo-outer" class="responsiveimg" src="../T3/resources/WIElektrotechnikLogo.png"></button></div>
         </div>
         <div class="boden" id="boden">
-            </div>
-                    <!-- 
-            <div class="stuehle">
-            <img id="stuhleins" src="../T3/resources/fertigerstuhlmehrere.png" alt="mehere stühle">
-            <img id="stuhlzwei" src="../T3/resources/fertigerstuhlmehrere.png" alt="mehere stühle">
-            <img id="stuhldrei" src="../T3/resources/fertigerstuhlmehrere.png" alt="mehere stühle">
-            <img id="stuhlvier" src="../T3/resources/fertigerstuhlmehrere.png" alt="mehere stühle">
-            </div>
-        -->
+        </div>
 
-        <!-- GEMEINSAMES ENDE INHALTSBEREICH -->
+
+        
         <div class="master-container">
                     <div class="dots"></div>
-        <div class="page-container">
-            <div class="page" id="tafelspalte1"><img id="maschinenbaulogo" class="zoomedimg" src="../T3/resources/WIMaschinenbauLogo.png"></div>
-            <div class="page" id="tafelspalte2"><img id="lifecyclelogo" class="zoomedimg" src="../T3/resources/WILifecyclemanagementLogo.png"></div>
-            <div class="page" id="tafelspalte3"><img id="elektrotechniklogo" class="zoomedimg" src="../T3/resources/WIElektrotechnikLogo.png"></div>
+                    <img class="arrowdown" src="../../res/images/T1/Arrow.png">
+                    <img class="arrowup" src="../../res/images/T1/Arrow.png">
+          <div class="page-container">
+            <div class="page" id="tafelspalte1"><img id="maschinenbaulogo-inner" class="zoomedimg" src="../T3/resources/WIMaschinenbauLogo.png"><h2 class="subheadline">Maschinenbau</h2></div>
+            <div class="page" id="tafelspalte2"><img id="lifecyclelogo-inner" class="zoomedimg" src="../T3/resources/WILifecyclemanagementLogo.png"><h2 class="subheadline">Life Cycle Management</h2></div>
+            <div class="page" id="tafelspalte3"><img id="elektrotechniklogo-inner" class="zoomedimg" src="../T3/resources/WIElektrotechnikLogo.png"><h2 class="subheadline">Elektrotechnik</h2></div>
+            <div class="info" id="infospalte1"><p class="info-section" id="info-maschinenbau"></p></div>
+            <div class="info" id="infospalte2"><p class="info-section" id="info-lifecycle"></p></div> 
+            <div class="info" id="infospalte3"><p class="info-section" id="info-elektrotechnik"></p></div>     
           </div>
         </div>
+
+        <!-- GEMEINSAMES ENDE INHALTSBEREICH -->
         </main>
+   
         <!-- GEMEINSAMER FOOTER -->
-        <footer class="footer"> 
-            <p>Footer</p>
-        </footer>
+      
+                 <!-- GEMEINSAMER FOOTER -->
+                 <footer class="footerSmall footer"> 
+                    <img class="ArrowFooter" onclick="footerStart()" src="../../../res/images/T1/ArrowGrey.png" alt="footerArrow">
+                        <section class="footer-section flexContent" >
+                                <ul>
+                                    <h3>Web-Links</h3>
+                                    <li><a href="https://moodle.thm.de/course/view.php?id=7073" target="_blank"> Moodle</a></li>
+                                    <li><a href="https://webmail.thm.de/rc/?_task=mail&_mbox=INBOX" target="_blank"> Webmail</a></li>
+                                    <li> </li>
+                                    <li></li>
+                                </ul>
+                                <ul >
+                                    <h3>Kontakt</h3>
+                                    <li>Technische Hochschule Mittelhessen</li>
+                                    <li>Fachbereich Wirtschaftsingenieurwesen</li>
+                                    <li> +49 6031 604-500</li>
+                                    <li>sekretariat@wi.thm.de</li>
+                                </ul>
+                                <ul >
+                                    <h3>Besuchadresse</h3>
+                                    <li>Campus Friedberg</li>
+                                    <li>Sekretariat & Dekanat</li>
+                                    <li>Raum A4.1.02</li>
+                                    <li>D - 61169 Friedberg</li>
+                                </ul>
+                                <ul>
+                                    <ul>
+                                        <h3>Socialmedia</h3>
+                                        <li><a href="https://www.thm.de/wi/studium/sie-studieren/aktuelles?format=feed&type=rss" target="_blank"><img class="footerImg"src="https://www.thm.de/site/templates/thm/images/socialmedia/rss.svg"></img> WI RSS FEED</a></li>
+                                        <li><a href="https://www.youtube.com/playlist?list=PLKmmYfW-9lJU2SpoPQ5tNiRytHyrqYai8" target="_blank"><img class="footerImg"src="https://www.thm.de/site/templates/thm/images/socialmedia/youtube.svg"> Youtube</img></a></li>
+                                        <li><a href="https://www.facebook.com/thm.wi" target="_blank"><img class="footerImg"src="https://www.thm.de/site/templates/thm/images/socialmedia/facebook.svg"> Facebook</a></img></li>
+                                        <li><a href="https://www.instagram.com/thm.wi/" target="_blank"><img class="footerImg"src="https://www.thm.de/site/templates/thm/images/socialmedia/instagram.svg"></img> Instagram</a></li>
+                                    </ul>
+                           
+                        </section>
+                   
+                </footer>
+   
+       
     </div>
 </body>
 
 <!-- JS-FILES -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/CustomEase.min.js"></script>
 <script src="https://code.jquery.com/jquery-latest.js"></script>
 <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/Draggable3.min.js?r=897"></script>
+<script src="https://cdn.jsdelivr.net/npm/interactjs/dist/interact.min.js"></script>
+<script src="../T0/JS/gsap.js"></script>
+<script src="../T3/JS/scriptT3.js"></script>
 
-<script src="script.js"></script>
 
 </html>

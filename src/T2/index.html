@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gebäude SVG</title>
+    <link rel="stylesheet" media="screen and (max-width: 999px)" href="styles.css">
+    <link rel="stylesheet" media="screen and (min-width: 1000px)" href="stylesDesktop.css">
+</head>
+<body>
+
+<section class="logo">
+    <img id="gesamtesLogo" src="svgs/thm_logo_gesamt.svg">
+</section>
+
+<section class="bloecke">
+    <div class="block" id="b0"></div>
+    <div class="block"></div>
+    <div class="block"></div>
+    <div class="block"></div>
+    <div class="block"></div>
+    <div class="block gruen"></div>
+    <div class="block gruen"></div>
+    <div class="block"></div>
+    <div class="block"></div>
+    <div class="block"></div>
+    <div class="block gruen"></div>
+    <div class="block"></div>
+</section>
+
+<section class="himmel-haus-boden">
+    <div class="himmel">
+        <img id="svg_sonne" src="svgs/sonne.svg" alt="Die Sonne scheint hinter Wolken">
+        <img id="svg_wolken" src="svgs/wolken.svg" alt="Wolken">
+        <img id="svg_papierflieger" src="svgs/papierflieger.svg" alt="Papierflieger">
+        <svg id="svg_path1">
+            <path id="pathMobile"
+                  d="M 0 800 Q 50 850 250 800 Q 450 850 500 700 Q 550 550 400 550 Q 250 550 300 700 Q 350 800 550 800 Q 950 850 1000 800"></path>
+        </svg>
+        <svg id="svg_path2">
+            <path id="pathDesktopKlein"
+                  d="M 0 250 Q 350 300 650 250 Q 800 250 800 150 Q 800 50 600 50 Q 500 50 500 150 Q 500 250 750 250 Q 1250 300 1400 250"></path>
+        </svg>
+        <svg id="svg_path3">
+            <path id="pathDesktopGross"
+                  d="M 0 400 Q 150 450 800 400 Q 1000 400 1000 300 Q 1000 200 850 200 Q 750 200 750 300 Q 750 400 900 400 Q 2000 500 3000 450 "></path>
+        </svg>
+
+    </div>
+    <div id="noten"></div>
+    <div class="haus">
+        <img id="svg_baeumeFullHD" src="svgs/baeumeFullHD.svg">
+        <div class="gebäude">
+            <div class="voegel">
+                <img id="svg_vogel1" src="svgs/vogel1.svg" alt="Ein Vogel, der auf dem THM-Schriftzug sitzt">
+                <img id="svg_vogel2" src="svgs/vogel2.svg" alt="Ein Vogel, der auf dem THM-Schriftzug sitzt">
+            </div>
+            <img id="svg_gebäude" src="svgs/gebaeude.svg"
+                 alt="Ein THM Gebäude">
+            <img id="svg_thmSchriftzug" src="svgs/thmSchriftzug.svg" alt="THM-Schriftzug auf dem Gebäude">
+            <img id="svg_wirtschaftsingenieurwesen" src="svgs/wirtschaftsingenieurwesen.svg"
+                 alt="Wirtschaftsingenieurwesen Schriftzug über den Türen">
+            <img id="svg_baeume" src="svgs/baeume.svg" alt="Bäume die neben dem Gebäude stehen">
+            <div class="tueren" onclick="tuerenKlick()">
+                <img id="svg_portal" src="svgs/portal.svg" alt="Portal, dass die Tür darstellt">
+                <img id="svg_türLinks" src="svgs/tuerLinks.svg"
+                     alt="Die linke Eingangstür des Gebäudes. Klicken um zur Schwerpunktauswahl zu gelangen">
+                <img id="svg_türRechts" src="svgs/tuerRechts.svg"
+                     alt="Die rechte Eingangstür des Gebäudes. Klicken um zur Schwerpunktauswahl zu gelangen">
+                <div class="türspalt"></div>
+                <img id="svg_hand" src="svgs/hand.svg">
+            </div>
+            <div id="scooter">
+                <a href="https://www.youtube.com/watch?v=AaZAmGJ2VIg" target="_blank">
+                    <img src="svgs/scooter.svg" alt="Ein Elektro-Scooter, der vor dem Haus steht">
+                </a>
+            </div>
+        </div>
+        <div class="boden"></div>
+    </div>
+</section>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/MotionPathPlugin.min.js"></script>
+<script src="script.js" defer></script>
+
+</body>
+</html>
+
+<!-- Alt-Texte teilweise entfernen? -->

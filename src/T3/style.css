@@ -1,0 +1,327 @@
+
+
+/* änderung   */
+
+/* Possible Fix for Endless Footer
+body{
+    width: 100%;
+    margin: auto;
+}*/
+
+main {
+    display: flex;
+    flex-flow: column;
+    /*
+    border-width: 1vh;
+    border-style: solid;
+    border-color: #80ba24;
+    border-left: none;
+    border-right: none;
+    */
+    text-align: center;
+    background-image: url(../T3/resources/whitewallhorizontal.png);
+    background-size: 100% 100%;
+}
+.tafel{
+    flex-grow: 2;
+    width: 94%;
+    margin-top: 1vh;
+    margin-bottom: 20vh;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    border: 1vw solid black;
+    background-image: URL(https://www.ggs-frelenberg.de/files/ggs-frelenberg/theme/img/tafel.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.zoomedtafel{
+    height: 100%;
+    width: 94%;
+    margin-top: 1vh;
+    margin-bottom: 20vh;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    border: 1vw solid black;
+    /*background-image: URL(https://www.ggs-frelenberg.de/files/ggs-frelenberg/theme/img/tafel.jpg);*/
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.page-container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    visibility: hidden;
+    height: 100%;
+    width: 100%;
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+  }
+
+.info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    height: auto;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+}
+
+/* Relative Subheadline
+.subheadline{
+    position: relative;
+    color: white;
+    left: 0%;
+
+}
+*/
+
+.subheadline{
+    position: absolute;
+    color: white;
+    left: 50%;
+
+}
+
+#elektrotechniklogo-outer {
+    width: 15vmin;
+}
+
+#elektrotechniklogo-inner {
+    width: 22.5vmin;
+}
+
+.tafelspalte{
+    float: left;
+    width: 33.33%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#tafelspalte1{
+    background-image: URL(../T3/resources/tafelspalte1.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+}
+
+#infospalte1 {
+    background-image: URL(../T3/resources/tafelspalte1.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+}
+
+#tafelspalte2{
+    background-image: URL(../T3/resources/tafelspalte2.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+}
+
+#infospalte2 {
+    background-image: URL(../T3/resources/tafelspalte2.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+}
+
+#tafelspalte3 {
+    background-image: URL(../T3/resources/tafelspalte3.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    grid-row: 1 / 2;
+    grid-column: 3 / 4;
+}
+
+#infospalte3 {
+    background-image: URL(../T3/resources/tafelspalte3.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    grid-row: 2 / 3;
+    grid-column: 3 / 4;
+}
+
+.zoomedimg{
+
+    width: 30vmin;
+    height: auto;
+    object-fit: contain;
+    cursor: pointer;
+}
+
+.responsiveimg{
+    width: 20vmin;
+    height: auto;
+    object-fit: contain;
+    cursor: pointer;
+}
+
+.boden{
+    flex-grow: 1;
+    width: 100%;
+    background-image: url(../T3/resources/hal-gatewood-JL-Wz38iawg-unsplash.jpg);
+    background-repeat: repeat;
+    background-size: 100% 100%;
+    position: relative;
+}
+
+.btn-icon{
+    background-color: transparent;
+    border: 0px;
+}
+
+/* Sliding Animation/Navigation */
+
+.dot {
+    background-color: #fff;
+    position: relative;
+    width: 3vmin;
+    height: 3vmin;
+    margin: 3vmin 2vmin;
+    cursor: pointer;
+    border-radius: 100%;
+    float: left;
+  }
+
+.dots {
+    visibility: hidden;
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    top: 10%;
+  }
+
+.arrowdown {
+    visibility: hidden;
+    position: absolute;
+    transform: rotate(270deg);
+    z-index: 1;
+    height: auto;
+    left: 50%;
+    bottom: 0%;
+}
+
+.arrowup {
+    visibility: hidden;
+    position: absolute;
+    transform: rotate(90deg);
+    z-index: 1;
+    height: auto;
+    left: 50%;
+    top: 0%;
+}
+
+section {
+    padding: 1vw;
+    border-radius: 1em;
+}
+
+.info-section {
+    padding: 1vw;
+    width: 90%;
+    height: auto;
+    max-height: 80%;
+    color: white;
+    text-align: left;
+}
+
+@media only screen and (orientation: landscape) {
+    .subheadline{
+     bottom: 18%;
+    }
+    .arrowdown, .arrowup {
+        width: 15vmin;   
+    }
+    @media only screen and (max-height: 319px) {
+        html {
+            font-size: 10px;
+          }
+      }
+      @media screen and (min-height: 320px) {
+        html {
+          font-size: calc(16px + 2 * ((100vh - 320px) / 160));
+        }
+      }
+      @media only screen and (min-height: 481px) {
+        html {
+            font-size: calc(18px + 2 * ((100vh - 481px) / 287));
+          }
+      }
+      @media only screen and (min-height: 769px) {
+        html {
+            font-size: calc(20px + 2 * ((100vh - 769px) / 255));
+          }
+      }
+      @media screen and (min-height: 1025) {
+        html {
+            font-size: calc(22px + 2 * ((100vh - 1025px) / 175));
+          }
+      }
+      @media only screen and (min-height: 1201px) {
+        html {
+            font-size: 24;
+        }
+      }
+ }
+ 
+ @media only screen and (orientation: portrait) {
+     .subheadline{
+      bottom: 25%;
+     }
+     .arrowdown, .arrowup {
+        width: 20vmin;   
+    }
+
+    @media only screen and (max-width: 319px) {
+        html {
+            font-size: 10px;
+          }
+      }
+      @media screen and (min-width: 320px) {
+        html {
+          font-size: calc(16px + 2 * ((100vw - 320px) / 160));
+        }
+      }
+      @media only screen and (min-width: 481px) {
+        html {
+            font-size: calc(18px + 2 * ((100vw - 481px) / 287));
+          }
+      }
+      @media only screen and (min-width: 769px) {
+        html {
+            font-size: calc(20px + 2 * ((100vw - 769px) / 255));
+          }
+      }
+      @media screen and (min-width: 1025) {
+        html {
+            font-size: calc(22px + 2 * ((100vw - 1025px) / 175));
+          }
+      }
+      @media only screen and (min-width: 1201px) {
+        html {
+            font-size: 24;
+        }
+      }
+  }
+    

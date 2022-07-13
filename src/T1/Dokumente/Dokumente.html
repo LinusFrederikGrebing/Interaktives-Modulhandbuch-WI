@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<!-- GEMEINSAMER HEAD -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0">
+
+    <!-- CSS-FILES -->
+    <link rel="stylesheet" href="../../T0/CSS/grundstruktur.css">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../../T0/CSS/desktop.css">
+    <link rel="stylesheet" href="./dokumente.css">
+    <title> Modulhandbuch - WI </title>
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <!-- GEMEINSAMER HEADER-->
+        <header>
+            <button class="buttonlogo" id="buttonlogo">
+                <img class="logo" src="../../../res/images/T1/THM_Logo_4c (1).png" alt="thmLogo" >
+            </button>
+       
+            <h1 class="bold" id="modulUeberschrift">Dokumente</h1>
+            <div class="kreuzModule inaktiv">
+                <img onclick="semesterwahl(); closeModule(); toggleBG();" class="kreuz" src="../../../res/images/T1/kreuz.png" alt="thmLogo" >
+            </div>
+        
+        </header>
+        <!-- GEMEINSAME NAVIGATION -->
+        <section class="sectionfull">
+            <div>
+                <div class="backgroundnav"></div>
+                <nav>
+                    <ul class="main-menu">
+                        <li><a href="../../T2/index.html"><span data-clip="Start">Start</span></a></li>
+                        <li><a href="../../T3/view.html"><span data-clip="Schwerpunktwahl">Schwerpunktwahl</span></a></li>
+                        <li><a class="navfontmiddle" href="../Maschinenbau/Maschinenbau.html" onclick="semesterwahl()"><span data-clip="Maschinenbau">Maschinenbau</span></a></li>
+                        <li><a class="navfontmiddle" href="../Elektrotechnik/elektrotechnik.html" onclick="semesterwahl()"><span data-clip="Elektrotechnik">Elektrotechnik</span></a></li>
+                        <li><a class="navfontmiddle" href="../Lifecycle Management/lcm.html" onclick="semesterwahl()"><span data-clip="Life-Cycle-Management">Life-Cycle-Management</span></a></li>
+                        <li><a href="../Dokumente/Dokumente.html"><span data-clip="Dokumente">Dokumente</span></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+        
+        <!-- GEMEINSAMER ANFANG INHALTSBEREICH -->
+        <main>
+            <div class="dropdown">
+                <button onclick="myFunction(0)" class="dropbtn">Infos für die Bachelorstudiengänge WI und WI-Immobulien</button>
+                <div class="dropdown-content myDropdown">
+                  <a href="../../../res/dokumente/MH_Wirtschaftsingenieurwesen_2020_Bachelor_Version_5.pdf" target="_blank">Aktuelles Modulhandbuch WI</a>
+                  <a href="../../../res/dokumente/STEP_Zeitplan_SoSem_22_WI_V01.pdf">STEP-Programm</a>
+                  <a href="../../../res/dokumente/Mentoring_STEP_WiSem_22_03_22.pdf">Präsentation Mentoring</a>
+                  <a href="../../../res/dokumente/Studienprogramm_WI_SoSem_30_03_22.pdf">Präsentation Studienprogramm</a>
+                  <a href="../../../res/dokumente/Stundenplan_SoSem_2022_WI-Industrie.pdf">Stundenplan</a>
+                  <a href="../../../res/dokumente/Vorlesungsbeginn_Bachelor_Wirtschaftsingenieurwesen.pdf">Start der Vorlesungen im Bachelorstudiengang WI</a>
+                  <a href="../../../res/dokumente/PO_Wirtschaftsingenieurwesen_2020_Bachelor_Version_5.pdf">Aktuelle Prüfungsordnung WI</a>
+                </div>
+              </div>
+            <div class="dropdown">
+                <button onclick="myFunction(1)" class="dropbtn">Kontakte/ Allgemeine Informationen</button>
+                <div class="dropdown-content myDropdown">
+                    <a href="../../../res/dokumente/SoSe2022_Merkblatt.pdf" target="_blank">Merkblatt</a>
+                    <a href="../../../res/dokumente/SoSe2022_Ansprechpartner.pdf">Ansprechpartner</a>
+                    <a href="../../../res/dokumente/SoSe2022_Ausschüsse.pdf">Ausschüsse</a>
+                    <a href="../../../res/dokumente/BERATUNG.pdf">Fachliche Beratung</a>
+                </div>
+              </div>
+
+              <div class="dropdown">
+                <button onclick="myFunction(2)" class="dropbtn">Vorlesungs- und Semesterlaufzeiten, Anmeldefirsten zu Klausuren</button>
+                <div class="dropdown-content myDropdown">
+                    <a href="../../../res/dokumente/SoSe2022_Vorlesungszeiten.pdf" target="_blank">
+                        Vorlesungs- und Semesterlaufzeiten</a>
+                    <a href="../../../res/dokumente/Anmeldefristen-SoSe-2022.pdf">Zeitraum zur Prüfungsanmeldung im SoSe2022</a>
+                </div>
+              </div>
+
+              <div class="dropdown">
+                <button onclick="myFunction(3)" class="dropbtn">Anträge/ Dokumente</button>
+                <div class="dropdown-content myDropdown">
+                    <a href="https://www.thm.de/wi/studium/sie-studieren/antraege-dokumente" target="_blank">Weitere wichtige Dokumente</a>
+                </div>
+              </div>
+
+             <div class="dropdown">
+                <button onclick="myFunction(4)" class="dropbtn">Lageplan</button>
+                <div class="dropdown-content myDropdown">
+                  <a href="../../../res/dokumente/Gebäudeplan_Campus_Friedberg.pdf" target="_blank">Campus Friedberg</a>
+                  <a href="https://www.thm.de/wi/images/vtour/">Virtueller Rundgang durch den Fachbereich WI und die Hochschule</a>
+               
+                </div>
+              </div>
+
+              
+                
+    
+        <!-- GEMEINSAMES ENDE INHALTSBEREICH -->
+        </main>
+
+        <!-- GEMEINSAMER FOOTER -->
+       
+
+   <footer class="footerSmall"> 
+    <img class="ArrowFooter" onclick="footerStart()" src="../../../res/images/T1/ArrowGrey.png" alt="footerArrow">
+        <section class="footer-section flexContent" >
+                <ul>
+                    <h3>Web-Links</h3>
+                    <li><a href="https://moodle.thm.de/course/view.php?id=7073" target="_blank"> Moodle</a></li>
+                    <li><a href="https://webmail.thm.de/rc/?_task=mail&_mbox=INBOX" target="_blank"> Webmail</a></li>
+                    <li> </li>
+                    <li></li>
+                </ul>
+                <ul >
+                    <h3>Kontakt</h3>
+                    <li>Technische Hochschule Mittelhessen</li>
+                    <li>Fachbereich Wirtschaftsingenieurwesen</li>
+                    <li> +49 6031 604-500</li>
+                    <li>sekretariat@wi.thm.de</li>
+                </ul>
+                <ul >
+                    <h3>Besuchadresse</h3>
+                    <li>Campus Friedberg</li>
+                    <li>Sekretariat & Dekanat</li>
+                    <li>Raum A4.1.02</li>
+                    <li>D - 61169 Friedberg</li>
+                </ul>
+                <ul>
+                    <h3>Socialmedia</h3>
+                    <li><a href="https://www.thm.de/wi/studium/sie-studieren/aktuelles?format=feed&type=rss" target="_blank"><img class="footerImg"src="https://www.thm.de/site/templates/thm/images/socialmedia/rss.svg"></img> WI RSS FEED</a></li>
+                    <li><a href="https://www.youtube.com/playlist?list=PLKmmYfW-9lJU2SpoPQ5tNiRytHyrqYai8" target="_blank"><img class="footerImg"src="https://www.thm.de/site/templates/thm/images/socialmedia/youtube.svg"> Youtube</img></a></li>
+                    <li><a href="https://www.facebook.com/thm.wi" target="_blank"><img class="footerImg"src="https://www.thm.de/site/templates/thm/images/socialmedia/facebook.svg"> Facebook</a></img></li>
+                    <li><a href="https://www.instagram.com/thm.wi/" target="_blank"><img class="footerImg"src="https://www.thm.de/site/templates/thm/images/socialmedia/instagram.svg"></img> Instagram</a></li>
+                </ul>
+           
+        </section>
+   
+</footer>
+    </div>
+
+ 
+</body>
+
+<!-- JS-FILES -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+<script src="https://code.jquery.com/jquery-latest.js"></script>
+<script src="../../T0/JS/gsap.js"></script>
+<script src="../../T0/JS/script.js"></script>
+<script src="../../T0/JS/modules.js"></script>
+<script src="../../T1/Dokumente/scriptDok.js"></script>
+
+</html>

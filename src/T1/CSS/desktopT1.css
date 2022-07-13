@@ -1,0 +1,292 @@
+    
+    @media only screen and (min-device-width: 450px) and (max-device-width: 1000px) {
+  
+    /* NEU VON T1 */
+
+          
+    .boxerstes {
+        margin-top: 15vh;
+        margin-left: 25vh;
+    }
+    .erstes {
+        width: auto;
+        height: 12.5vh; 
+    }
+    .boxzweites {
+        position: relative; 
+        top: -16vh; 
+        
+        left: 11vh;
+        width: 15vh;
+    }
+    .zweites {
+        width: auto;
+        height: 15vh;  
+    }
+
+    .boxdrittes {
+        top: -18vh;
+        left: 6.5vh;
+        position: relative;
+        width:  17.5vh;
+    }
+    .drittes {
+        height: 17.5vh;
+        width: auto;
+    }
+
+    .boxviertes {
+        position: relative; 
+        left: 21.5vh;
+        top: -31vh;
+        width: 20vh;
+    }
+    .viertes {
+        height: 20vh;
+        width: auto;
+    }
+
+    .boxfunftes {
+        position: relative;
+        left: 9.5vh;
+        top: -36vh; 
+        width: 22.5vh;
+    }
+    .funftes {
+        height: 22.5vh;
+        width: auto;
+    }
+
+    .boxsechstes {
+        position: relative; 
+        left: -11.5vh;
+        top: -49vh;
+        width: 25.5vh;
+    }
+    .sechstes {
+        height: 25.5vh;
+        width: auto;
+    }
+
+    .boxPraxisInnen{
+      margin-top: -39vh;
+   
+    }
+
+    .boxsiebtes {
+       
+        position: relative;
+        left: 16.2vh;
+        top: -66vh;
+        
+        width: 27.5vh;
+    }
+    .siebtes {
+       
+        height: 27.5vh;
+        width: auto;
+        opacity: 0.5;
+    }
+
+    .boxpraxisphase {
+        position: relative;
+        left: 2vh;
+        top: 14vh; 
+        width: 27.5vh;
+    } 
+    .praxisphase {
+        height: 11vh;
+        width: auto;
+    }
+    .boxBachelor {
+        position: relative;
+        left: 2vh;
+        top: 12.8vh; 
+        width: 27.5vh;
+    } 
+    .Bachelor {
+        height: 11vh;
+        width: auto;
+    }
+     .boxKolloquium {
+        position: relative;
+        left: -7vh;
+        top: -6vh; 
+        width: 27.5vh;
+    } 
+    .Kolloquium{
+        height: 9vh;
+        width: auto;
+    }
+    .boxgrund {
+        position: relative;
+        left: -12vh;
+        top: -135vh; 
+        width: 27.5vh;
+    }
+    .grund{
+        height: 12vh;
+        width: auto;
+    }
+    .mList {
+        padding-top: 3vh;
+        padding-bottom: 3vh;
+        padding-left: 10vw;
+        padding-right: 3vw;
+        list-style: none;
+        font-weight:normal;
+        font-size: 1vw;
+        position: relative;
+      }
+      
+    
+    }
+    
+    
+    @media only screen and (min-device-width: 1000px){
+
+              
+        .boxerstes {
+            margin-top: 15vh;
+            margin-left: 25vh;
+        }
+        .erstes {
+            width: auto;
+            height: 12.5vh; 
+        }
+        .boxzweites {
+            position: relative; 
+            top: -16vh; 
+            
+            left: 11vh;
+            width: 15vh;
+        }
+        .zweites {
+            width: auto;
+            height: 15vh;  
+        }
+    
+        .boxdrittes {
+            top: -18vh;
+            left: 6.5vh;
+            position: relative;
+            width:  17.5vh;
+        }
+        .drittes {
+            height: 17.5vh;
+            width: auto;
+        }
+    
+        .boxviertes {
+            position: relative; 
+            left: 21.5vh;
+            top: -31vh;
+            width: 20vh;
+        }
+        .viertes {
+            height: 20vh;
+            width: auto;
+        }
+    
+        .boxfunftes {
+            position: relative;
+            left: 9.5vh;
+            top: -36vh; 
+            width: 22.5vh;
+        }
+        .funftes {
+            height: 22.5vh;
+            width: auto;
+        }
+    
+        .boxsechstes {
+            position: relative; 
+            left: -11.5vh;
+            top: -49vh;
+            width: 25.5vh;
+        }
+        .sechstes {
+            height: 25.5vh;
+            width: auto;
+        }
+    
+        .boxPraxisInnen{
+          margin-top: -39vh;
+       
+        }
+    
+        .boxsiebtes {
+           
+            position: relative;
+            left: 16.2vh;
+            top: -66vh;
+            
+            width: 27.5vh;
+        }
+        .siebtes {
+           
+            height: 27.5vh;
+            width: auto;
+            opacity: 0.5;
+        }
+    
+        .boxpraxisphase {
+            position: relative;
+            left: 2vh;
+            top: 14vh; 
+            width: 27.5vh;
+        } 
+        .praxisphase {
+            height: 11vh;
+            width: auto;
+        }
+        .boxBachelor {
+            position: relative;
+            left: 2vh;
+            top: 12.8vh; 
+            width: 27.5vh;
+        } 
+        .Bachelor {
+            height: 11vh;
+            width: auto;
+        }
+         .boxKolloquium {
+            position: relative;
+            left: -7vh;
+            top: -6vh; 
+            width: 27.5vh;
+        } 
+        .Kolloquium{
+            height: 9vh;
+            width: auto;
+        }
+        .boxgrund {
+            position: relative;
+            left: -12vh;
+            top: -135vh; 
+            width: 27.5vh;
+        }
+        .grund{
+            height: 12vh;
+            width: auto;
+        }
+    
+        .mList {
+            padding-top: 3vh;
+            padding-bottom: 3vh;
+            padding-left: 10vw;
+            padding-right: 3vw;
+            list-style: none;
+            font-weight:normal;
+            font-size: 0.7vw;
+            position: relative;
+          }
+
+          .text-section{
+            font-weight: 10vw;
+            padding: 2vh;
+          }
+
+
+        
+    }

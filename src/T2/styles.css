@@ -1,0 +1,221 @@
+html, body {
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+body {
+    position: relative;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    /* https://cssgradient.io/ */
+    background: rgb(86, 228, 248);
+    background: linear-gradient(180deg, rgba(86, 228, 248, 1) 0%, rgba(174, 227, 172, 1) 95%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+.bloecke {
+    width: 70%;
+    position: absolute;
+    bottom: 1.75%;
+    left: 15%;
+    z-index: 1;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.block {
+    margin: 2.1em;
+    min-width: 10em;
+    min-height: 10em;
+    width: 10em;
+    height: 10em;
+    background: #4C5C66;
+}
+
+.block:first-child {
+    visibility: hidden;
+}
+
+.gruen {
+    background: #80BA26;
+}
+
+#gesamtesLogo {
+    height: 95%;
+    width: 100%;
+}
+
+.logo {
+    height: 20%;
+    width: 90%;
+    margin: auto;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+
+}
+
+.himmel {
+    position: absolute;
+    width: 100%;
+    height: 40%;
+    top: 0;
+}
+
+#svg_wolken {
+    position: absolute;
+    top: 25%;
+    left: 12.5%;
+    width: 75%;
+    z-index: 1;
+}
+
+#svg_sonne {
+    position: absolute;
+    top: 25%;
+    left: 12.5%;
+    width: 30%;
+}
+
+svg {
+    position: absolute;
+    visibility: hidden;
+}
+
+#svg_papierflieger {
+    position: absolute;
+    top: 110%;
+    height: 8em;
+    left: -10%;
+    z-index: 5;
+}
+
+.boden {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    height: 5em;
+    background: #4E4E4E;
+    z-index: 4;
+}
+
+#svg_gebäude {
+    position: absolute;
+    width: 67.5%;
+    bottom: 4.7em;
+    left: 16.3%;
+    z-index: 1;
+}
+
+#svg_thmSchriftzug {
+    position: absolute;
+    width: 23.5em;
+    bottom: 47.43em;
+    left: 43%;
+    z-index: 2;
+}
+
+#svg_wirtschaftsingenieurwesen {
+    position: absolute;
+    width: 37.5em;
+    bottom: 15.15em;
+    left: 19.5%;
+    z-index: 2;
+}
+
+#svg_baeumeFullHD {
+    display: none;
+}
+
+
+#svg_türLinks {
+    position: absolute;
+    height: 9.59em;
+    bottom: 4.95em;
+    left: 42%;
+    z-index: 3;
+}
+
+#svg_türRechts {
+    position: absolute;
+    height: 9.59em;
+    bottom: 4.95em;
+    left: 50%;
+    z-index: 3;
+}
+
+.türspalt {
+    position: absolute;
+    width: 0.2em;
+    bottom: 4.9em;
+    left: 50%;
+    height: 9.65em;
+    background: #4C5C66;
+    z-index: 4;
+}
+
+#svg_portal {
+    position: absolute;
+    width: 9.4em;
+    bottom: 5em;
+    left: 42%;
+    z-index: 1;
+}
+
+#svg_hand {
+    position: absolute;
+    width: 6.5em;
+    bottom: 6em;
+    left: 47.5%;
+    z-index: 6;
+    transform: rotate(-30deg);
+}
+
+#svg_baeume {
+    position: absolute;
+    bottom: 4.5em;
+    width: 100%;
+    z-index: 0;
+}
+
+#scooter img {
+    position: absolute;
+    width: 8em;
+    bottom: 2em;
+    left: 22vw;
+    z-index: 5;
+}
+
+#svg_vogel1 {
+    position: absolute;
+    width: 4em;
+    bottom: 55.8em;
+    left: 47%;
+    z-index: 2;
+}
+
+#svg_vogel2 {
+    position: absolute;
+    width: 4em;
+    bottom: 56em;
+    left: 55%;
+    z-index: 2;
+}
+
+#noten img {
+    position: absolute;
+    width: 1.8vh;
+    bottom: 56em;
+    left: 51.4%;
+}

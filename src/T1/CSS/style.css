@@ -1,85 +1,8 @@
-
-/* Gesamtstruktur */
-*{
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-}
-
-html, body {
-    height: 100%;
-    width: 100%;
-}
-
-
-.wrapper {
-    display: grid;
-    min-height: 100%;
-    grid-template-rows: 0fr 5fr 0.2fr;
-    grid-template-columns: 0fr 9fr 0fr;
-    grid-template-areas:
-    "a h d"
-    "m m m"
-    "f f f";
-}
-header {
-    grid-area: h;
-}
-aside {
-    grid-area: a;
-}
-div {
-    grid-area: d;
-}
-main {
-    grid-area: m;
-}
-footer {
-    grid-area: f;
-}
-
-
-
-.inaktiv {
-    display: none;
-}
-
-/* header */
-aside .header{ 
-    max-width: 4vw;
-    max-height: 5vh;
-    padding: 0.5vw;
-}
-
-header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    font-size: 3vw;
-}
-
-.kreuz {
-    width: 5rem;
-    height: auto;
-}
-
-.logo {
-    width: auto;
-    height: 7.5vh;  
-}
-
-
 /* MAIN */
 main {
     padding: 1vw;
-    border-width: 1vh;
-    border-style: solid;
-    border-color: #80ba24;
-    border-left: none;
-    border-right: none;
     text-align: center;
-    background-image: URL(https://www.ggs-frelenberg.de/files/ggs-frelenberg/theme/img/tafel.jpg); 
+    background-image: URL("https://www.ggs-frelenberg.de/files/ggs-frelenberg/theme/img/tafel.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
@@ -96,273 +19,144 @@ section {
     transform: translate(50%,-50%); 
 }
 
-.text-section {
-    position: relative;
-    padding: 2vw;
-    margin: 0 auto; 
-    width: 70%;
-    height: auto;
-    background-color: #80ba24;
-    z-index: 0;
-  
-}
-/* MAIN - SIDEBAR */
-.modulList{
-    margin-left: -9vw;
-    position: relative;
-    float: left;
-    z-index: 1;
-}
 
-main .modulList{
-   height: 100%;
-}
-
-.sidebar {  
-    transition: all 0.4s cubic-bezier(.1,.62,.2,.92);
-    position: relative;
-    background-color: #4a5c66;
-    color: white;
-    overflow-x: hidden;
-    height: 50%;
-    text-align: left;
-    width: 0;
-  }
-  
-  .mList {
-    padding-top: 3vh;
-    padding-bottom: 3vh;
-    padding-left: 10vw;
-    padding-right: 3vw;
-    list-style: none;
-    font-weight:normal;
-    font-size: 1vw;
-    position: relative;
-  }
-  
-  .mList:hover {
-    background-color: #80ba24;
-    color: white;
-  }
-  
-  .sidebar .mList {
-    z-index: 2;
-  }
- 
 /* MAIN - ELEKTROTECHNIK */
     /* SEMESTERAUSWAHL */  
       
     .boxerstes {
-        margin-top: 15vh;
-        margin-left: 25vh;
+        margin-top: 20vh;
+        margin-left: 25vw;
     }
+
     .erstes {
         width: auto;
-        height: 12.5vh; 
+        height: 20vw; 
     }
+
     .boxzweites {
         position: relative; 
-        top: -16vh; 
-        
-        left: 11vh;
-        width: 15vh;
+        top: -16.5vw; 
+        left: 5vw;
+        width: 15vw;
     }
     .zweites {
         width: auto;
-        height: 15vh;  
+        height: 22.5vw;  
     }
 
     .boxdrittes {
-        top: -18vh;
-        left: 6.5vh;
+        top: -19vw;
+        left: 2.5vw;
         position: relative;
-        width:  17.5vh;
+        width:  17.5vw;
     }
     .drittes {
-        height: 17.5vh;
+        height: 25vw;
         width: auto;
     }
 
     .boxviertes {
         position: relative; 
-        left: 21.5vh;
-        top: -31vh;
-        width: 20vh;
+        left: 25.5vw;
+        top: -43.2vw;
+        width: 20vw;
     }
     .viertes {
-        height: 20vh;
+        height: 27.5vw;
         width: auto;
     }
 
     .boxfunftes {
         position: relative;
-        left: 9.5vh;
-        top: -36vh; 
-        width: 22.5vh;
+        left: 14.5vw;
+        top: -47.5vw; 
+        width: 22.5vw;
     }
     .funftes {
-        height: 22.5vh;
+        height: 30vw;
         width: auto;
     }
 
     .boxsechstes {
         position: relative; 
-        left: -11.5vh;
-        top: -49vh;
-        width: 25.5vh;
+        left: -11.5vw;
+        top: -64vw;
+        width: 25.5vw;
     }
     .sechstes {
-        height: 25.5vh;
+        height: 32.5vw;
         width: auto;
     }
 
+    .boxPraxisInnen{
+      margin-top: -45vw;
+   
+    }
+
     .boxsiebtes {
+       
         position: relative;
-        left: 16.2vh;
-        top: -66vh;
-        width: 27.5vh;
+        left: 20.2vw;
+        top: -86vw;
+        
+        width: 27.5vw;
     }
     .siebtes {
-        height: 27.5vh;
+       
+        height: 35vw;
         width: auto;
         opacity: 0.5;
     }
 
     .boxpraxisphase {
         position: relative;
-        left: 2vh;
-        top: -24.5vh; 
-        width: 27.5vh;
-    }
+        left: 6vw;
+        top: 14vw; 
+        width: 27.5vw;
+    } 
     .praxisphase {
-        height: 11vh;
+        height: 11vw;
         width: auto;
     }
+
     .boxBachelor {
         position: relative;
-        left: 2vh;
-        top: -25.8vh; 
-        width: 27.5vh;
-    }
+        left: 6vw;
+        top: 12.8vw; 
+        width: 27.5vw;
+    } 
     .Bachelor {
-        height: 11vh;
+        height: 11vw;
         width: auto;
     }
-    .boxKolloquium {
+     .boxKolloquium {
         position: relative;
-        left: -6vh;
-        top: -42vh; 
-        width: 27.5vh;
-    }
+        left: -3vw;
+        top: -6vw; 
+        width: 27.5vw;
+    } 
     .Kolloquium{
-        height: 9vh;
+        height: 9vw;
         width: auto;
     }
     .boxgrund {
         position: relative;
-        left: -12vh;
-        top: -172vh; 
-        width: 27.5vh;
+        left: -12vw;
+        top: -135vw; 
+        width: 27.5vw;
     }
     .grund{
-        height: 12vh;
+        height: 12vw;
         width: auto;
     }
+    @font-face {
+        font-family: 'Chalk';
+        src: URL('../../../res/Fonts/chawp.ttf') format('truetype');
+      }
 
-    /* MODULAUSWAHL */
-    .image {
-        width: 50vw;
-        height: auto;      
-    }
-
-    .leftArrow{
-        float: left;
-        width: 10vw;
-        height: auto;  
-        margin-top:7vh;  
-
-    }
-    
-    .rightArrow{
-        float: right;
-        transform: rotate(180deg);
-        width: 10vw;
-        height: auto;
-        margin-top:7vh;  
-  
-    }
-    
-    .img-sectionModul {
-        position: relative;
-        padding: 2vh; 
-        margin: 3vh;
-    }
-    
-    .tafelimg{
-        background-image: URL(https://www.ggs-frelenberg.de/files/ggs-frelenberg/theme/img/tafel.jpg); 
-        background-repeat: 0 0;
-        background-size: 100% 100%;
-    }
-
-    .circleImg{
-        position: relative;
-        width: 30vw;
-        height: auto;
-        top:0vh;
-        z-index:1;
-        -webkit-clip-path: circle(25% at 50% 50%);
-    }
-    .bgimage {
-        /*background-image: URL(https://www.bgg.de/content/wp-content/uploads/2018/11/giessen-labor1.jpg); 
-        */
-        background-position: center center;
-        background-repeat: no-repeat; 
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-        animation-name: example;
-        animation-duration: 12s;
-        animation-iteration-count: infinite;
-    }
-    @keyframes example{
-        0%{
-          background-image: url(/res/images/T1/hja_2018_ltz_thm_giessen_02-1920x1281.jpg);
-        }
-        50%{
-            background-image: url(https://www.bgg.de/content/wp-content/uploads/2018/11/giessen-labor1.jpg);
-        }
-        100%{
-          background-image: url(/res/images/T1/csm_th-mittelhessen_THM_0a4773ddf5.jpg);
-        }
-     }
-    
-/* FOOTER */
-footer {
-    position: relative;
-    height: 100%;
-    text-align: center;
-    background-color: black;
+    @import url('http://fonts.cdnfonts.com/css/callie-chalk-font');
+   figcaption{
+    font-size: 2vw;
     color: white;
-    z-index: 3;
-}
-
-footer p {
-    display: flex;
-}
-
-.footer-section{
-    height: 0vh;
-}
-
-.ArrowFooter{
-    position: relative;
-    width: auto;
-    height: 5vh;  
-    transform: rotate(0deg);
-}
-
-
-
-
-
+    font-family: 'Callie Chalk Font', sans-serif;
+   }
